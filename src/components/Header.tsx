@@ -1,11 +1,11 @@
 import Logo from './Logo'
-import Navigation from './Navigation'
+import Nav from './navigation/Nav'
 
 const Header = () => {
   return (
-    <header className='flex justify-between w-full mb-16 pt-3'>
+    <header className='flex justify-between w-full p-1 mb-16 pt-3 border'>
       <Logo />
-      <Navigation />
+      <Nav />
     </header>
   )
 }
