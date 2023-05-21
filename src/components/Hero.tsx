@@ -1,26 +1,33 @@
+'use client'
+import Link from 'next/link'
 import SvgLayerOne from './SvgLayerOne'
-import SvgLayerTwo from './SvgLayerTwo'
 
 const Hero = () => {
   return (
-    <div className='flex flex-col bg-white text-zinc-800 md:flex-row relative w-full h-[700px] top-0 z-0'>
-      <section className='w-full md:w-1/2 m-auto flex flex-col'>
-        <div className='mx-20'>
-          <h1 className='text-6xl'>
+    <div className='flex flex-col bg-white text-zinc-800 md:flex-row relative w-full h-[800px] top-0 z-0'>
+      <section className='w-full md:w-1/3 m-auto flex flex-col ml-10'>
+        <div className=''>
+          <h1 className='font-extralight text-6xl'>
             Ahora
-            <p className='font-semibold'>
-              Es muy fácil para tí
-              <br />
-              adquirir tu RCV
+            <p className='font-normal'>
+              es muy fácil para tí adquirir tu <span className='font-semibold'>RCV</span>
             </p>
           </h1>
-          <p className='mt-4'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Arcu ac tortor dignissim convallis.
+          <p className='mt-6'>
+            La forma más fácil de adquirir tu RCV, con la mejor asesoría y al mejor precio del mercado.{' '}
+            <span className='font-semibold'>¡No esperes más!</span>
           </p>
+
+          <div className='mt-16'>
+            <Link
+              href='/profile'
+              className='bg-orange-500 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded relative overflow-hidden group hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-400  hover:ring-2 hover:ring-offset-2 hover:ring-orange-400 transition-all ease-out duration-300'>
+              COMPRAR
+            </Link>
+          </div>
         </div>
       </section>
-      <section className='w-full md:w-1/2 relative flex items-center mr-20'>
+      <section className='w-full md:w-2/3 relative flex items-center'>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className='hero__main_image w-full relative z-20 aspect-video '
@@ -29,7 +36,6 @@ const Hero = () => {
         />
 
         <SvgLayerOne className='absolute top-0 left-0 z-10' />
-        {/* <SvgLayerTwo className=' absolute top-0 left-0 z-0' /> */}
       </section>
     </div>
   )

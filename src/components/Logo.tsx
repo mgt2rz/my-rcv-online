@@ -3,10 +3,12 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <Link href='/'>
-      <span className='text text-gray-500'>mi</span>
-      <span className='font-semibold text-2xl'>RCV</span>
-    </Link>
+    <span className=''>
+      <Link href='/'>
+        <span className='font-bold text-2xl'>RCV</span>
+        <span className='font-semibold text-2xl text-orange-500'>ONLINE</span>
+      </Link>
+    </span>
   )
 }
 

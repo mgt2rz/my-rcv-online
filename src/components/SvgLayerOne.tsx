@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { SVGProps } from 'react'
 const SvgLayerOne = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns='http://www.w3.org/2000/svg' viewBox='-120 0 225 100' {...props}>
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' {...props}>
     <defs>
       <linearGradient id='a' x1={0} x2={1} y1={1} y2={0}>
         <stop offset='0%' stopColor='rgba(248, 117, 55, 1)' />

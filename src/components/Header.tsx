@@ -3,7 +3,7 @@ import Nav from './navigation/Nav'
 
 const Header = () => {
   return (
-    <header className='flex justify-between w-full p-1 text-zinc-900 py-3 z-10'>
+    <header className='flex justify-between w-full text-zinc-900 z-10 py-10'>
       <Logo />
       <Nav />
     </header>

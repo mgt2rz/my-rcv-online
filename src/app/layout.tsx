@@ -1,12 +1,12 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Raleway } from 'next/font/google'
 
 import Header from '@/components/Header'
 import AuthProvider from '@/components/AuthProvider'
 import React from 'react'
 import Footer from '@/components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const font = Raleway({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'My RCV Online',
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={`${font.className} mx-40`}>
         <AuthProvider>
           <Header />
           <main>{children}</main>
