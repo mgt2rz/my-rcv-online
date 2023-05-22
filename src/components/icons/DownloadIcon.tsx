@@ -2,48 +2,18 @@ import React from 'react'
 
 const DownloadIcon = () => {
   return (
-    <svg viewBox='0 0 24 24' className='w-8' xmlns='http://www.w3.org/2000/svg' fill='#000000'>
+    <svg viewBox='0 0 24 24' className='w-8' fill='none' xmlns='http://www.w3.org/2000/svg'>
       <g id='SVGRepo_bgCarrier' stroke-width='0' />
       <g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' />
       <g id='SVGRepo_iconCarrier'>
-        <title />
-        <g id='Complete'>
-          <g id='download'>
-            <g>
-              <path
-                d='M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7'
-                fill='none'
-                stroke='#ffffff'
-                stroke-linecap='round'
-                stroke-linejoin='round'
-                stroke-width='2'
-              />
-              <g>
-                <polyline
-                  data-name='Right'
-                  fill='none'
-                  id='Right-2'
-                  points='7.9 12.3 12 16.3 16.1 12.3'
-                  stroke='#ffffff'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
-                />
-                <line
-                  fill='none'
-                  stroke='#ffffff'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
-                  x1='12'
-                  x2='12'
-                  y1='2.7'
-                  y2='14.2'
-                />
-              </g>
-            </g>
-          </g>
-        </g>
+        {' '}
+        <path
+          d='M20 14V17.5C20 20.5577 16 20.5 12 20.5C8 20.5 4 20.5577 4 17.5V14M12 15L12 3M12 15L8 11M12 15L16 11'
+          stroke='#ffffff'
+          stroke-width='1.5'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />{' '}
       </g>
     </svg>
   )

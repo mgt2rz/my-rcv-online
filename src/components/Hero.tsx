@@ -1,10 +1,10 @@
 'use client'
 import Link from 'next/link'
-import SvgLayerOne from './SvgLayerOne'
+// import SvgLayerOne from './SvgLayerOne'
 
 const Hero = () => {
   return (
-    <div className='flex flex-col bg-white text-zinc-800 md:flex-row relative w-full h-[800px] top-0 z-0'>
+    <div className='flex flex-col bg-white text-zinc-800 md:flex-row relative w-full h-fit md:h-[700px] lg:h-[800px] top-0 z-0'>
       <section className='w-full md:w-1/3 m-auto flex flex-col ml-10'>
         <div className=''>
           <h1 className='font-extralight text-6xl'>
@@ -29,13 +29,16 @@ const Hero = () => {
       </section>
       <section className='w-full md:w-2/3 relative flex items-center'>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        {/* <img
           className='hero__main_image w-full relative z-20 aspect-video '
           src='/assets/images/herocar.webp'
           alt='hero car image'
-        />
+        /> */}
 
-        <SvgLayerOne className='absolute top-0 left-0 z-10' />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className='w-full relative z-20' src='/assets/images/hero_img.webp' alt='hero car image' />
+
+        {/* <SvgLayerOne className='absolute top-0 left-0 z-10' /> */}
       </section>
     </div>
   )
