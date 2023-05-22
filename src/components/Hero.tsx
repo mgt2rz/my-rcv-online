@@ -29,16 +29,7 @@ const Hero = () => {
       </section>
       <section className='w-full md:w-2/3 relative flex items-center'>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        {/* <img
-          className='hero__main_image w-full relative z-20 aspect-video '
-          src='/assets/images/herocar.webp'
-          alt='hero car image'
-        /> */}
-
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img className='w-full relative z-20' src='/assets/images/hero_img.webp' alt='hero car image' />
-
-        {/* <SvgLayerOne className='absolute top-0 left-0 z-10' /> */}
       </section>
     </div>
   )
