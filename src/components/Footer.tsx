@@ -5,7 +5,7 @@ const Footer = () => {
         <a href='https://twitter.com/gt2rz_dev' rel='noopener noreferrer' className='text-gray-600 ml-1' target='_blank'>@panas.team</a>
       </p>
       <span className='inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start'>
-        
+        This is a demo site, not a real business.
       </span>
     </div>
   </div>
