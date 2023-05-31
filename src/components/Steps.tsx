@@ -6,16 +6,16 @@ const Steps = () => {
       <header className='text-center'>
         <h2 className='text-4xl font-semibold mb-4'>Tres simples pasos</h2>
         <p className='text-base'>
-          Ingresa en segundos, realiza estos sencillos pasos e inicia <br /> tu nueva experiencia junto a nosotros.
+          Ingresa en segundos, realiza estos sencillos pasos e inicia <br className="hidden md:flex" /> tu nueva experiencia junto a nosotros.
         </p>
       </header>
-      <main className='flex gap-8'>
+      <main className='flex gap-8 flex-col md:flex-row'>
         {steps &&
           steps.map((step, index) => (
             <div
               key={step.id}
-              className='flex flex-col md:flex-row justify-between mt-20 rounded-lg p-10 w-1/3 shadow-gray-200 shadow-xl border border-gray-100'>
-              <div className='flex flex-col items-center w-full'>
+              className='flex flex-col md:flex-row justify-between mt-4 md:mt-20 rounded-lg p-10 w-full md:w-1/3 shadow-gray-200 shadow-xl border border-gray-100'>
+              <div className='flex flex-col items-center w-full text-center md:text-left'>
                 <div className='flex items-center justify-center w-16 h-16 rounded-full bg-orange-400 text-white mb-4'>
                   {step.icon}
                 </div>

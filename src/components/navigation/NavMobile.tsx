@@ -28,7 +28,7 @@ const NavMobile = ({ session, providers, signOut, signIn }: Props) => {
             onClick={() => setToggleDropdown(prev => !prev)}
           />
           {toggleDropdown && (
-            <div className='absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end border'>
+            <div className='z-40 absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end border'>
               <Link
                 href='/'
                 className='text font-inter text-gray-700 hover:text-gray-500 font-medium'
@@ -62,11 +62,15 @@ const NavMobile = ({ session, providers, signOut, signIn }: Props) => {
         </div>
       ) : (
         providers &&
-        Object.values(providers).map(provider => (
-          <button type='button' key={provider.id} className='' onClick={() => signIn(provider.id)}>
-            Acceder
-          </button>
-        ))
+            Object.values(providers).map(provider => (
+              <button
+                type='button'
+                key={provider.id}
+                className='ml-14 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded'
+                onClick={() => signIn(provider.id)}>
+                ACCEDER
+              </button>
+            ))
       )}
     </nav>
   )
