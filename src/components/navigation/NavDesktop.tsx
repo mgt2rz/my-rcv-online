@@ -48,7 +48,7 @@ const NavDesktop = ({ session, providers, signOut, signIn }: Props) => {
               <button
                 type='button'
                 key={provider.id}
-                className='ml-14 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded'
+                className='ml-14 bg-gray-800 hover:bg-black text-white font-bold py-2 px-4 rounded'
                 onClick={() => signIn(provider.id)}>
                 ACCEDER
               </button>

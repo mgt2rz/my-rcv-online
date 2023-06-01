@@ -16,7 +16,7 @@ const Validation = () => {
               <a
                 href='#'
                 className='inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-400 hover:bg-orange-500'>
-                VERIFICAR
+                Validar RCV
               </a>
             </div>
           </div>
