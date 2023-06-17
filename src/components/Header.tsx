@@ -31,12 +31,12 @@ const Header = () => {
 
   return (
     <header className='flex w-full text-zinc-900'>
-      <nav className="border-gray-200 dark:bg-gray-800 dark:border-gray-700 w-full">
+      <nav className="border-gray-200 w-full">
         <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
           <span className="justify-start">
             <Logo />
           </span>
-          <button onClick={() => setToggleDropdown(prev => !prev)} data-collapse-toggle="navbar-hamburger" type="button" className="md:hidden inline-flex items-center p-2 ml-3 text-sm text-orange-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+          <button onClick={() => setToggleDropdown(prev => !prev)} data-collapse-toggle="navbar-hamburger" type="button" className="md:hidden inline-flex items-center p-2 ml-3 text-sm text-orange-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-hamburger" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
             <svg className="w-10 h-10" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" /></svg>
           </button>
@@ -85,11 +85,11 @@ const Header = () => {
           </div>
           {toggleDropdown && (
           <div className="w-full z-40" id="navbar-hamburger">
-            <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+            <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50">
               <li>
                 <a href="#" 
                   onClick={() => setToggleDropdown(false)} 
-                  className="bg-orange-100 flex text-xl py-4 pl-8 pr-4 text-gray-900 hover:bg-orange-500 hover:text-white rounded dark:bg-blue-600 font-semibold" aria-current="page"
+                  className="bg-orange-100 flex text-xl py-4 pl-8 pr-4 text-gray-900 hover:bg-orange-500 hover:text-white rounded font-semibold" aria-current="page"
                 >
                   {isLogged ? (
                     <>
@@ -125,7 +125,7 @@ const Header = () => {
               <li>
                 <a href="#" 
                   onClick={() => setToggleDropdown(false)} 
-                  className="block text-xl py-4 pl-8 pr-4 text-gray-900 hover:bg-orange-500 hover:text-white rounded dark:bg-blue-600" aria-current="page"
+                  className="block text-xl py-4 pl-8 pr-4 text-gray-900 hover:bg-orange-500 hover:text-white rounded" aria-current="page"
                 >
                   Inicio
                 </a>
@@ -133,7 +133,7 @@ const Header = () => {
                <li>
                 <a href="#" 
                   onClick={() => setToggleDropdown(false)} 
-                  className="block text-xl py-4 pl-8 pr-4 text-gray-900 hover:bg-orange-500 hover:text-white rounded dark:bg-blue-600" aria-current="page"
+                  className="block text-xl py-4 pl-8 pr-4 text-gray-900 hover:bg-orange-500 hover:text-white rounded" aria-current="page"
                 >
                   Dashboard
                 </a>
@@ -141,7 +141,7 @@ const Header = () => {
               <li>
                 <a href="#" 
                   onClick={() => setToggleDropdown(false)} 
-                  className="block text-xl py-4 pl-8 pr-4 text-gray-900 hover:bg-orange-500 hover:text-white rounded dark:bg-blue-600 font-semibold" aria-current="page"
+                  className="block text-xl py-4 pl-8 pr-4 text-gray-900 hover:bg-orange-500 hover:text-white rounded font-semibold" aria-current="page"
                 >
                   Comprar
                 </a>
@@ -149,7 +149,7 @@ const Header = () => {
               <li>
                 <a href="#" 
                   onClick={() => setToggleDropdown(false)} 
-                  className="block text-xl py-4 pl-8 pr-4 text-gray-900 hover:bg-orange-500 hover:text-white rounded dark:bg-blue-600 font-semibold" aria-current="page"
+                  className="block text-xl py-4 pl-8 pr-4 text-gray-900 hover:bg-orange-500 hover:text-white rounded font-semibold" aria-current="page"
                 >
                   Validar
                 </a>
@@ -160,7 +160,7 @@ const Header = () => {
                     setToggleDropdown(false)
                     signOut()
                   }} 
-                  className="block text-xl py-4 pl-8 pr-4 text-gray-900 bg-orange-200 hover:bg-gray-800 hover:text-white rounded dark:bg-blue-600 font-bold" aria-current="page"
+                  className="block text-xl py-4 pl-8 pr-4 text-gray-900 bg-orange-200 hover:bg-gray-800 hover:text-white rounded font-bold" aria-current="page"
                 >
                   Salir
                 </a>
