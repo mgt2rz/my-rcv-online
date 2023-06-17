@@ -1,0 +1,16 @@
+services:
+  app:
+    container_name: my_rcv_nextjs_app
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    env_file:
+      - .env.local
+    volumes:
+      - ./:/app
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
